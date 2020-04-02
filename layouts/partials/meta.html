@@ -12,7 +12,7 @@
 		{{ partial "style" . }}
 	
 		{{ range .Site.Params.CustomCSS }}
-		<link rel="stylesheet" href="{{ . }}"/>
+		<link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}"/>
 		{{ end }}
 
 		<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono|Lato|Raleway">
